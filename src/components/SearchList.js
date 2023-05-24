@@ -1,5 +1,5 @@
 import ListItem from "./ListItem";
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const SearchList = ({ arts, clickedArtWork, changePage, page}) => {
@@ -14,16 +14,16 @@ const SearchList = ({ arts, clickedArtWork, changePage, page}) => {
 
     
     return (
-        <>
+        <div>
             <ul>
                 {listComponents}
             </ul>
-            <div>
-            { (page > 1) ? <button onClick={() => changePage((pageNumber) => pageNumber-1)}>Previous</button> : null}
-            <label>Page {page} </label>
-            <button onClick={() => changePage((pageNumber) => pageNumber+1)}>Next</button>
+            <div className="page-buttons">
+                { (page > 1) ? <button onClick={() => changePage((pageNumber) => pageNumber-1)}>Previous</button> : null}
+                <label>Page {page} </label>
+                <button onClick={() => changePage((pageNumber) => pageNumber+1)}>Next</button>
             </div>
-        </>
+        </div>
     );
 };
 

@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import React from 'react';
 
 import ArtContainer from "./containers/ArtContainer";
@@ -6,7 +6,7 @@ import ArtContainer from "./containers/ArtContainer";
 function App() {
   return (
     <div className="App">
-      <h1>Art for today. Change me later.</h1>
+      <h1 className='header'>WORLD GALLERY</h1>
      <ArtContainer />
     </div>
   );

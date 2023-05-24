@@ -45,7 +45,8 @@ const ArtContainer = () => {
     return (
         <>
             <ArtSearch getArt={getArt} setPage={setPage} page={page}/>
-            <SearchList arts={arts} clickedArtWork={clickedArtWork} changePage={changePage} page={page}/>
+            {arts.length === 0 ? null  :  <SearchList arts={arts} clickedArtWork={clickedArtWork} changePage={changePage} page={page}/>}
+            
             {clickedArt && clickedArtInfo ? <ArtDisplay artWork={clickedArt} artWorkInfo={clickedArtInfo} /> : null}
 
         </>

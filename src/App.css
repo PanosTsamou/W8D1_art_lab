@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  background-color: #AFD3E2;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +36,44 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.header{
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #146C94;
+  color: #F6F1F1;
+  margin: 0;
+  height: 5rem;
+}
+.search{
+  background-color: #19A7CE;
+  gap: 30px;
+
+}
+.search h2{
+  color: #F6F1F1;
+}
+.search div label{
+  margin-right: 5px;
+}
+
+.search-form{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+}
+
+ul li{
+ list-style-type: none;
+ /* color: #F6F1F1; */
+ margin-bottom: 7px;
+ font-size: 15px;
+}
+
+.page-buttons{
+  display:  flex;
+  justify-content: center;
+  gap: 40px;
 }
