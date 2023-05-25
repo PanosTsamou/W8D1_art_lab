@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const ArtSearch = ({ getArt, setPage, page }) => {
+const ArtSearch = ({ updateInitialSearch}) => {
 
     const [query, setQuery] = useState("");
 
@@ -17,9 +17,8 @@ const ArtSearch = ({ getArt, setPage, page }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         // newSearch(query);
-        setPage(1)
         if (query && category) {
-            getArt(query.toLowerCase(), category, page)
+            updateInitialSearch(query.toLowerCase(), category, 1)
             // setPage(1)
         }
 

@@ -77,3 +77,8 @@ ul li{
   justify-content: center;
   gap: 40px;
 }
+
+a{
+  text-emphasis: none;
+  text-decoration: none;
+}
